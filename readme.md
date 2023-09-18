@@ -25,9 +25,9 @@ Le but de ce TP est de vous faire découvrir, pour certains, le monde du web alo
 
 
 ## Première étape:
-Vous forkez ce repository et vous commencez à travailler sur votre copie. Si vous avez des doutes demandez à votre professeur il est la pour ça. 
-Vous modifiez votre readme et vous y incorporez **votre prénom, votre nom et votre TD**.
+Vous forkez ce repository et vous commencez à travailler sur votre copie. Si vous avez des doutes de la procédure à suivre tu peux te rendre [ici](https://gitlab.com/tw-ece-paris/promo-2023/naming-conventions#fork-a-project) et ou demandez à votre professeur il est là pour ça. 
+Vous modifirez votre readme et vous y incorporez **votre prénom, votre nom et votre TD**.
 
-Nomer le Repo/Projet dois être conforme aux conventions de nommages présente [ici](https://gitlab.com/tw-ece-paris/promo-2023/naming-conventions)
+Nommer le Repo/Project selon les conventions de nommages présente [ici](https://gitlab.com/tw-ece-paris/promo-2023/naming-conventions)
 
 A vous de jouer !
