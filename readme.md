@@ -8,6 +8,12 @@ Dans un futur proche vous allez postuler pour des offres de stage ou bien votre 
 
 Le but de ce TP est de vous faire découvrir, pour certains, le monde du web alors n"hesitez pas à essayer des balises ou des directives CSS même si elles n'ont pas été abordées en cours.
 
+> Manque d'inspiration ?
+> tu peux aller sur [Dribble](https://dribbble.com/shots/popular) et chercher par exmple les mots clés suivants *`website cv`* / *`personal landing page* afin de t'inspirer de modèles`*\
+> [exemple 1](https://dribbble.com/shots/21314715-Drake-Personal-Portfolio)\
+> [exemple 2](https://dribbble.com/shots/21708936-Portfolio-Landing-Page)\
+> [exemple 3](https://dribbble.com/shots/\15299804-Biolab-personal-portfolio-website-design)
+
 ## Eléments obligatoires
 **Le nom respect de ces consignes sera pris en compte dans la notation**
 
