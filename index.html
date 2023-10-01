@@ -4,16 +4,66 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
 
-    <body class="container mx-auto">
-        <!-- top section with visual, name and contact infos -->
+    <body class="container mx-auto p-4">
+        <!-- top section with animated visual, profile picture, name and contact infos -->
+        <!-- Yt video tutorial for anime.js https://www.youtube.com/watch?v=aI9BZI8bf_Y -->
+        <!-- Original inspo https://code.tutsplus.com/javascript-based-animations-using-animejs-targets-and-properties--cms-28894t -->
+        <!-- Free tool to create the svg https://boxy-svg.com/app -->
+        <section class="bg-neutral-100 border rounded-lg lg:mt-4 w-full">
+            <svg class="line-drawing w-10/12 xl:w-6/12 mx-auto" viewBox="0 12.453 457.823 126.606" xmlns="http://www.w3.org/2000/svg">
+                <path style="fill: rgb(228, 65, 65); stroke: rgb(0, 0, 0);" stroke-width="2" d="M 16.732 33.98 L 37.741 115.579 L 60.513 80.295 L 76.652 116.474 L 109.952 29.181 L 89.738 33.113 L 78.174 81.384 L 58.188 62.228 L 42.868 85.779 L 25.903 30.872 L 16.732 33.98 Z"/>
+                <path style="fill: rgb(230, 127, 13); stroke: rgb(0, 0, 0);" stroke-width="2" d="M 120.664 55.904 L 108.56 118.508 L 119.198 118.508 L 131.563 52.839 L 120.664 55.904 Z"/>
+                <path style="fill: rgb(35, 100, 170); stroke: rgb(0, 0, 0);" stroke-width="2" d="M 156.514 35.486 L 136.623 119.379 L 180.739 116.59 L 190.4 105.379 L 151.097 108.132 L 168.234 36.146 L 156.514 35.486 Z"/>
+                <path style="fill: rgb(171, 146, 191); stroke: rgb(0, 0, 0);" stroke-width="2" d="M 218.366 38.834 L 200.982 117.885 L 246.416 113.859 L 257.325 103.377 L 215.13 107.187 L 228.558 41.886 L 218.366 38.834 Z"/>
+                <path style="fill: rgb(255, 191, 70); stroke: rgb(0, 0, 0); transform-origin: 269.804px 83.4135px;" stroke-width="2" d="M 270.408 113.183 L 258.287 50.579 L 268.94 50.579 L 281.322 116.248 L 270.408 113.183 Z" transform="matrix(-1, 0, 0, -1, 0.000061035156, -0.000015258789)"/>
+                <path style="fill: rgb(61, 165, 217); stroke: rgb(0, 0, 0);" stroke-width="2" d="M 322.139 96.39 L 310.694 97.081 L 302.214 118.076 L 292.978 119.112 L 318.323 40.235 L 343.278 118.008 L 332.307 117.933 L 322.139 96.39 Z"/>
+                <path style="fill: rgba(255, 255, 255); stroke: rgb(0, 0, 0);" stroke-width="2" d="M 312.039 91.626 L 322.692 90.893 L 317.364 73.535 L 312.039 91.626 Z"/>
+                <path style="fill: rgb(35, 150, 127); stroke: rgb(0, 0, 0);" stroke-width="2" d="M 370.019 48.042 L 367.688 116.585 L 356.531 117.404 L 362.845 33.144 L 372.155 33.455 L 393.17 69.949 L 420.302 32.405 L 432.209 32.348 L 426.202 120.841 L 413.936 119.736 L 421.416 45.695 L 397.134 78.406 L 387.82 78 L 370.019 48.042 Z"/>
+            </svg>
+        </section>
 
-        <!-- project section -->
+        <main class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 pt-4 w-full">
+            <!-- presentation -->
+            <section class="bg-neutral-100 border p-6 rounded-lg">
+                <h2 class="text-neutral-600 text-lg text-left font-semibold uppercase pb-2">Présentation</h2>
+                <p class="text-black text-base text-left font-normal leading-relaxed">Bonjour, je m'appelle William BRISA. Je suis <span class="font-semibold">étudiant 4e année d'école d'ingénieurs</span> et passionné par pleins de sujets.
+                </p>
+                <div class="mt-4 flex flex-col gap-2">
+                    <article class="bg-red-50 text-red-600 rounded-lg py-2 px-4 w-full border border-2 border-red-400 shadow cursor-pointer">Développement Web</article>
+                    <article class="bg-yellow-50 text-yellow-600 rounded-lg py-2 px-4 w-full border border-2 border-yellow-400 shadow cursor-pointer">Gestion de projet</article>
+                    <article class="bg-blue-50 text-blue-600 rounded-lg py-2 px-4 w-full border border-2 border-blue-400 shadow cursor-pointer">Création de contenu</article>
+                </div>
+            </section>
+            <!-- projects -->
+            <section class="bg-neutral-100 border rounded-lg">
+            </section>
+            <!-- contact form -->
+            <section class="lg:col-span-2 xl:col-span-1 bg-neutral-100 border rounded-lg">
+            </section>
+        </main>
+        
+        <!-- idea: add connected green dot on top right of the profile picture -->
+
+        <!-- project section + youtube video -->
 
         <!-- contact form -->
 
         <!-- footer -->
         
     </body>
+
+    <script>
+        anime({
+            targets: '.line-drawing path',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 2500,
+            delay: function(el, i) { return i * 250 },
+            direction: 'alternate',
+            loop: false
+        });
+    </script>
 </html>
