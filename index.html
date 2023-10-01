@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://kit.fontawesome.com/20e989b50e.js" crossorigin="anonymous"></script>
     </head>
 
     <body class="container mx-auto p-4">
@@ -29,19 +30,79 @@
             <!-- presentation -->
             <section class="bg-neutral-100 border p-6 rounded-lg">
                 <h2 class="text-neutral-600 text-lg text-left font-semibold uppercase pb-2">Présentation</h2>
-                <p class="text-black text-base text-left font-normal leading-relaxed">Bonjour, je m'appelle William BRISA. Je suis <span class="font-semibold">étudiant 4e année d'école d'ingénieurs</span> et passionné par pleins de sujets.
-                </p>
+                <p class="text-black text-base text-left font-normal leading-relaxed">Bonjour, je m'appelle William BRISA. Je suis <span class="font-semibold">étudiant 4e année d'école d'ingénieurs</span> et passionné par pleins de sujets.</p>
                 <div class="mt-4 flex flex-col gap-2">
-                    <article class="bg-red-50 text-red-600 rounded-lg py-2 px-4 w-full border border-2 border-red-400 shadow cursor-pointer">Développement Web</article>
+                    <article class="bg-neutral-50 text-neutral-600 rounded-lg py-2 px-4 w-full border border-2 border-neutral-400 shadow cursor-pointer">Développement Web</article>
                     <article class="bg-yellow-50 text-yellow-600 rounded-lg py-2 px-4 w-full border border-2 border-yellow-400 shadow cursor-pointer">Gestion de projet</article>
                     <article class="bg-blue-50 text-blue-600 rounded-lg py-2 px-4 w-full border border-2 border-blue-400 shadow cursor-pointer">Création de contenu</article>
                 </div>
             </section>
             <!-- projects -->
-            <section class="bg-neutral-100 border rounded-lg">
+            <section class="bg-neutral-100 border p-6 rounded-lg">
+                <h2 class="text-neutral-600 text-lg text-left font-semibold uppercase pb-2">Quelques projets</h2>
+                <p class="text-black text-base text-left font-normal leading-relaxed">Voici une sélection de quelques réalisations.</p>
+                <div class="mt-4 flex flex-col gap-4 w-full">
+                    <article class="flex w-full gap-6 items-center lg:items-end">
+                            <img src="assets/weandvous.jpg" class="rounded h-auto w-4/12 lg:w-5/12" alt="">
+                            <section>
+                                <a href="https://weandvous.fr" target="_blank">
+                                    <h3 class="text-md hover:text-neutral-600 transition">We&Vous <i class="pl-1 fa-solid fa-up-right-from-square"></i></h3>                             
+                                    <p class="text-neutral-500">Site vitrine, réparation informatique</p>
+                                </a>
+                            </section>
+                    </article>
+
+                    <article class="flex w-full gap-6 items-center lg:items-end">
+                        <img src="assets/funfake.jpg" class="rounded h-auto w-4/12 lg:w-5/12" alt="">
+                        <section class="">
+                            <a href="https://www.youtube.com/channel/UCVM-lULkLpkKKN7-hTHDLAw" target="_blank">
+                                <h3 class="text-md hover:text-neutral-600 transition">William's Workshop <i class="pl-1 fa-solid fa-up-right-from-square"></i></h3>
+                                <p class="text-neutral-500">Chaîne YouTube d'électronique</p>
+                            </a>
+                        </section>
+                    </article>
+                </div>
             </section>
             <!-- contact form -->
-            <section class="lg:col-span-2 xl:col-span-1 bg-neutral-100 border rounded-lg">
+            <section class="bg-neutral-100 border p-6 rounded-lg">
+                <h2 class="text-neutral-600 text-lg text-left font-semibold uppercase pb-2">Prenons contact</h2>
+                <!-- <p class="text-black text-base text-left font-normal leading-relaxed">Bonjour, je m'appelle William BRISA. Je suis <span class="font-semibold">étudiant 4e année d'école d'ingénieurs</span> et passionné par pleins de sujets.</p> -->
+                <!-- <div class="mt-4 flex flex-col gap-2">
+                </div> -->
+                <form
+                action="https://formspree.io/f/xgejpknb"
+                method="POST"
+                >
+                    <section class="mb-4">
+                        <label class="block mb-2" for="email">
+                            Email
+                        </label>
+                        <input 
+                            class="appearance-none shadow border border-2 border-neutral-400 rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline" 
+                            id="email" 
+                            type="email" 
+                            name="email"
+                            placeholder="Enter your information here"
+                        >
+                    </section>
+
+                    <section class="mb-4">
+                        <label class="block mb-2" for="email">
+                            Message
+                        </label>
+                        <textarea 
+                            class="appearance-none shadow border border-2 border-neutral-400 rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline" 
+                            id="message" 
+                            name="message"
+                            placeholder="Enter your message"
+                        ></textarea>
+                    </section>
+                    <button 
+                        class="w-full bg-neutral-200 hover:bg-neutral-300 py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline"
+                        type="submit">
+                        Envoyer
+                    </button>
+                </form>
             </section>
         </main>
         
