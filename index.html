@@ -55,24 +55,32 @@
             <section class="bg-neutral-100 border p-6 rounded-lg">
                 <h2 class="text-neutral-600 text-lg text-left font-semibold uppercase pb-2">Quelques projets</h2>
                 <p class="text-black text-base text-left font-normal leading-relaxed">Voici une sélection de quelques réalisations.</p>
-                <div class="mt-4 flex flex-col gap-4 w-full">
-                    <article class="flex w-full gap-6 items-center lg:items-end">
+                <div class="pt-4 flex flex-col gap-5 w-full">
+                    <article 
+                        class="flex w-full gap-6 cursor-pointer items-center lg:items-end"
+                        onclick="window.open('https://weandvous.fr', '_blank')"
+                    >
                             <img src="assets/weandvous.jpg" class="rounded h-auto w-4/12 lg:w-5/12" alt="">
                             <section>
-                                <a href="https://weandvous.fr" target="_blank">
-                                    <h3 class="text-md hover:text-neutral-600 transition">We&Vous <i class="pl-1 fa-solid fa-up-right-from-square"></i></h3>                             
-                                    <p class="text-neutral-500">Site vitrine, réparation informatique</p>
-                                </a>
+                                <h3 class="text-md hover:text-neutral-600 transition">
+                                    We&Vous 
+                                    <i class="pl-1 fa-solid fa-square-arrow-up-right"></i>
+                                </h3>                             
+                                <p class="text-neutral-500">Site vitrine, réparation informatique</p>
                             </section>
                     </article>
 
-                    <article class="flex w-full gap-6 items-center lg:items-end">
+                    <article
+                        class="flex w-full gap-6 cursor-pointer items-center lg:items-end"
+                        onclick="window.open('https://www.youtube.com/channel/UCVM-lULkLpkKKN7-hTHDLAw', '_blank')"
+                    >
                         <img src="assets/funfake.jpg" class="rounded h-auto w-4/12 lg:w-5/12" alt="">
-                        <section class="">
-                            <a href="https://www.youtube.com/channel/UCVM-lULkLpkKKN7-hTHDLAw" target="_blank">
-                                <h3 class="text-md hover:text-neutral-600 transition">William's Workshop <i class="pl-1 fa-solid fa-up-right-from-square"></i></h3>
-                                <p class="text-neutral-500">Chaîne YouTube d'électronique</p>
-                            </a>
+                        <section>
+                            <h3 class="text-md hover:text-neutral-600 transition">
+                                William's Workshop
+                                <i class="pl-1 fa-solid fa-square-arrow-up-right"></i>
+                            </h3>
+                            <p class="text-neutral-500">Chaîne YouTube d'électronique</p>
                         </section>
                     </article>
                 </div>
@@ -80,41 +88,56 @@
             <!-- contact form -->
             <section class="bg-neutral-100 border p-6 rounded-lg">
                 <h2 class="text-neutral-600 text-lg text-left font-semibold uppercase pb-2">Prenons contact</h2>
-                <!-- <p class="text-black text-base text-left font-normal leading-relaxed">Bonjour, je m'appelle William BRISA. Je suis <span class="font-semibold">étudiant 4e année d'école d'ingénieurs</span> et passionné par pleins de sujets.</p> -->
-                <!-- <div class="mt-4 flex flex-col gap-2">
-                </div> -->
                 <form
                 action="https://formspree.io/f/xgejpknb"
                 method="POST"
                 >
+                    <div class="grid grid-cols-2 gap-2 mb-4 w-full">
+                        <section class="">
+                            <label class="block mb-2" for="email">
+                                Nom<span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                class="bg-neutral-50 text-neutral-600 appearance-none border border-2 border-neutral-300 focus:border-neutral-400 rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow focus:shadow-outline transition" 
+                                id="nom" 
+                                type="nom" 
+                                name="nom"
+                                placeholder="Enter your name"
+                                required
+                            >
+                        </section>
+                        <section class="">
+                            <label class="block mb-2" for="email">
+                                Email<span class="text-red-500">*</span>
+                            </label>
+                            <input 
+                                class="bg-neutral-50 text-neutral-600 appearance-none border border-2 border-neutral-300 focus:border-neutral-400 rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow focus:shadow-outline transition" 
+                                id="email" 
+                                type="email" 
+                                name="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </section>
+                    </div>
+        
                     <section class="mb-4">
                         <label class="block mb-2" for="email">
-                            Email
-                        </label>
-                        <input 
-                            class="appearance-none shadow border border-2 border-neutral-300 focus:border-neutral-300 rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline transition" 
-                            id="email" 
-                            type="email" 
-                            name="email"
-                            placeholder="Enter your information here"
-                        >
-                    </section>
-
-                    <section class="mb-4">
-                        <label class="block mb-2" for="email">
-                            Message
+                            Message<span class="text-red-500">*</span>
                         </label>
                         <textarea 
-                            class="appearance-none shadow border border-2 border-neutral-300 focus:border-neutral-300 rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow-outline transition" 
+                            class="bg-neutral-50 text-neutral-600 appearance-none border border-2 border-neutral-300 focus:border-neutral-400 rounded-lg w-full py-3 px-3 leading-tight focus:outline-none focus:shadow focus:shadow-outline transition" 
                             id="message" 
                             name="message"
                             placeholder="Enter your message"
+                            required
                         ></textarea>
                     </section>
                     <button 
-                        class="w-full bg-neutral-200 hover:bg-neutral-300 text-neutral-700 py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition"
+                        class="bg-neutral-50 text-neutral-500 hover:text-neutral-600 font-medium w-full border border-2 border-neutral-300 hover:border-neutral-400 py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline hover:shadow focus:shadow-neutral-500/50 transition"
                         type="submit">
                         Envoyer
+                        <i class="pl-1 fa-solid fa-paper-plane"></i>
                     </button>
                 </form>
             </section>
